@@ -53,3 +53,38 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Build artifacts
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.lst
+*.map
+*.d
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# C/C++ build system files
+build/
+cmake-build*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+compile_commands.json
+
+# Dependencies and external libraries
+/lib/
+/vendor/
+/external/
