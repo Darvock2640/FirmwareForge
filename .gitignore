@@ -80,7 +80,7 @@ build/
 cmake-build*/
 CMakeCache.txt
 CMakeFiles/
-Makefile
+# Makefile
 *.cmake
 compile_commands.json
 
@@ -88,3 +88,11 @@ compile_commands.json
 /lib/
 /vendor/
 /external/
+
+# MPLAB VSCode
+_build*
+.generated*
+dist/
+# debug
+cmake/
+out/
