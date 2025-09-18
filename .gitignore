@@ -93,6 +93,6 @@ compile_commands.json
 _build*
 .generated*
 dist/
-debug
+# debug
 cmake/
 out/
