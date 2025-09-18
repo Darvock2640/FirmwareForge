@@ -35,6 +35,7 @@ The repository is organized into subfolders, each containing a standalone librar
 - **[ADS8866](ADS8866/)**: 16-bit SPI ADC library for Texas Instruments ADS8866.
 - **[MCP48FVXX](MCP48FVXX/)**: 12-bit dual-channel SPI DAC library for Microchip MCP48FVXX series.
 - **[adc124s021](adc124s021/)**: 4-channel, 12-bit SPI ADC library for Texas Instruments ADC124S021.
+- **[CDC_Console_USB](CDC_Console_USB/)**: USB CDC Example of use for Microchip 32 bits microcontrollers using MPLAB Harmony (MCC).
 
 Each library folder contains:
 - Source files (`.h`, `.c`)
