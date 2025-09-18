@@ -80,7 +80,7 @@ build/
 cmake-build*/
 CMakeCache.txt
 CMakeFiles/
-Makefile
+# Makefile
 *.cmake
 compile_commands.json
 
