@@ -1,0 +1,6 @@
+#This file specifies which GitHub users or teams are responsible for code in the repository.
+
+#When a pull request modifies code owned by a user or team, they will be automatically requested for a review.
+
+#The repository owner should always be a code owner for all files.
+* @Darvock2640
