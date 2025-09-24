@@ -2,38 +2,51 @@
 
 ## Overview
 
-The MCP48FVXX library provides an API for interfacing with MCP48FVXX series Digital-to-Analog Converters (DACs). These are 12-bit dual-channel DACs with SPI interface and integrated EEPROM for non-volatile storage of DAC settings.
+The MCP48FVXX library provides an API for interfacing with MCP48FVXX series Digital-to-Analog Converters (DACs). These are Single- and Dual-channel 8-bit, 10-bit, and 12-bit buffered voltage output Digital-to-Analog Converters (DAC) with volatile memory and an SPI serial interface.
 
 ## Hardware Information
 
-Supported MCP48FVXX chips:
-- MCP48FVB01
-- MCP48FVB02
-- MCP48FVB11
-- MCP48FVB12
-- MCP48FVB21
-- MCP48FVB22
+### Supported MCP48FVXX Chips
 
-Key features:
-- 12-bit resolution
-- Dual-channel output
-- SPI-compatible serial interface
-- Integrated EEPROM for storing DAC settings
-- Channel power on/off control
+**Single Channel DACs:**
+- **MCP48FVB01** - 8-bit, Single Channel, Buffered Voltage Output
+- **MCP48FVB11** - 10-bit, Single Channel, Buffered Voltage Output  
+- **MCP48FVB21** - 12-bit, Single Channel, Buffered Voltage Output
+
+**Dual Channel DACs:**
+- **MCP48FVB02** - 8-bit, Dual Channel, Buffered Voltage Output
+- **MCP48FVB12** - 10-bit, Dual Channel, Buffered Voltage Output
+- **MCP48FVB22** - 12-bit, Dual Channel, Buffered Voltage Output
+
+### Key Features
+
+- Resolution: 8-bit, 10-bit, or 12-bit depending on model
+- Single or Dual channel output
+- SPI-compatible serial interface (Up to 20 MHz writes and 10 MHz reads)
+- Individual channel power down control
+- Operating voltage: 2.7V to 5.5V
 
 ### Pin Configuration
 
-| Pin   | Description                |
-|-------|----------------------------|
-| CS    | Chip Select (Active Low)   |
-| SCK   | Serial Clock Input         |
-| SDI   | Serial Data Input          |
-| SDO   | Serial Data Output         |
-| VDD   | Supply Voltage             |
-| VREF  | Reference Voltage Input    |
-| VOUTA | DAC Output Channel A       |
-| VOUTB | DAC Output Channel B       |
-| GND   | Ground                    |
+| Pin | Name    | Description |
+|-----|---------|-------------|
+| 1   | VDD     | Positive Supply Voltage (2.7V to 5.5V) |
+| 2   | CS      | Chip Select (Active Low) |
+| 3   | VREF    | External Voltage Reference Input |
+| 4   | VOUT0   | DAC A Analog Output |
+| 5   | VOUT1   | DAC B Analog Output (Dual channel only)   |
+| 6   | LAT/HVC | DAC Register Latch/High-Voltage |
+| 7   | VSS     | Ground |
+| 8   | SDO     | Serial Data Output (for readback) |
+| 9   | SCK     | Serial Clock Input (up to 20 MHz) |
+| 10  | SDI     | Serial Data Input |
+
+### SPI Interface Specifications
+
+- **SPI Mode:** Mode 0 (CPOL=0, CPHA=0) or Mode 3 (CPOL=1, CPHA=1)
+- **Data Format:** MSB first, 24-bit commands
+- **Clock Frequency:** Up to 20 MHz
+- **Chip Select:** Active low, must remain low during entire 24-bit transfer
 
 ## Library Architecture
 
@@ -223,5 +236,5 @@ uint32_t mcp48fvxx_spi_transfer(uint32_t command_24bit) {
 
 ## References
 
-- [MCP48FVXX Datasheet](https://www.microchip.com/en-us/product/MCP48FVXX)
+- [MCP48FVXX Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/20005466A.pdf)
 
