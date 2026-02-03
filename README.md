@@ -37,6 +37,7 @@ The repository is organized into subfolders, each containing a standalone librar
 - **[adc124s021](adc124s021/)**: 4-channel, 12-bit SPI ADC library for Texas Instruments ADC124S021.
 - **[CDC_Console_USB](CDC_Console_USB/)**: USB CDC Example of use for Microchip 32 bits microcontrollers using MPLAB Harmony (MCC).
 - **[MCP4XXX](MCP4XXX/)**: I2C Digital Potentiometer library for Microchip MCP4XXX series.
+- **[TMP1075](TMP1075/)**: I2C Temperature Sensor library for Texas Instruments TMP1075. 
 
 Each library folder contains:
 - Source files (`.h`, `.c`)
