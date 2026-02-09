@@ -38,6 +38,7 @@ The repository is organized into subfolders, each containing a standalone librar
 - **[CDC_Console_USB](CDC_Console_USB/)**: USB CDC Example of use for Microchip 32 bits microcontrollers using MPLAB Harmony (MCC).
 - **[MCP4XXX](MCP4XXX/)**: I2C Digital Potentiometer library for Microchip MCP4XXX series.
 - **[TMP1075](TMP1075/)**: I2C Temperature Sensor library for Texas Instruments TMP1075. 
+- **[PWM](PWM/)**: Hardware-independent API for creating and controlling instances of PWM (Pulse Width Modulation) devices.
 
 Each library folder contains:
 - Source files (`.h`, `.c`)
