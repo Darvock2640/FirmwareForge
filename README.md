@@ -39,6 +39,7 @@ The repository is organized into subfolders, each containing a standalone librar
 - **[MCP4XXX](MCP4XXX/)**: I2C Digital Potentiometer library for Microchip MCP4XXX series.
 - **[TMP1075](TMP1075/)**: I2C Temperature Sensor library for Texas Instruments TMP1075. 
 - **[PWM](PWM/)**: Hardware-independent API for creating and controlling instances of PWM (Pulse Width Modulation) devices.
+- **[MCP356X](MCP356X/)**: 24-bit SPI ADC library for Microchip MCP3561/2/4. 
 
 Each library folder contains:
 - Source files (`.h`, `.c`)

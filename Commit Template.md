@@ -1,10 +1,10 @@
 <!-- Commit message template -->
-# Modify(),Add(),Delete()
+# Modify(file1,...fileN),Add(file1,...fileN),Delete(file1,...fileN)
 ## Modify
-* Class or file
+* file
     * change 1
     * change 2
 ## Add
-* Class or file
+* file
 ## Delete
-* Class or file
+* file
